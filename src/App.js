@@ -5,9 +5,6 @@ import { Auth } from './pages';
 
 function App() {
 
-  // console.log(getAuth())
-  console.log(process.env)
-
   const [user, setUser] = useState(undefined);
   const auth = getAuth();
 
