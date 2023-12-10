@@ -5,6 +5,7 @@ import {
   AvatarUpdate,
   DisplayNameUpdateForm,
   EmailUpdateForm,
+  PasswordUpdateForm
 } from '../../components/Profile';
 import './Profile.scss';
 import { BasicModal } from '../../components/Shared/BasicModal/BasicModal';
@@ -35,7 +36,7 @@ export function Profile() {
     }
     if (type === 'password') {
       setTitleModal('Actualizar contrasena');
-      setContentModal(<h1>Form password</h1>);
+      setContentModal(<PasswordUpdateForm onClose={onCloseModal} />);
     }
 
     setShowModal(true);
